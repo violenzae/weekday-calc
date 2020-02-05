@@ -12,17 +12,7 @@ minusYear() {
 }
  calculate() {
   const t = [0,3,2,5,0,3,5,1,4,6,2,4];
-   return this.year + this.year / 4 - this.year / 100 + this.year / 400 + t[this.month - 1] + this.day % 7; 
-  //  console.log(date.calculate)
- }
-
- print() {
-  const dayOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-  return Date.calculate(dayOfWeek);
-
+   let weekdaynum = (this.year + Math.round(this.year / 4) - Math.round(this.year / 100) + Math.round(this.year / 400) + t[this.month - 1] + this.day) % 7; 
+    return weekdaynum;
  }
 }
-
-// function weekDay (){
-
-// }
