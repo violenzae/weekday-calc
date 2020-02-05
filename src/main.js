@@ -14,11 +14,11 @@ $(document).ready(function() {
     const dayOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
     newDate.minusYear();
-    newDate.calculate();
 
-    console.log(newDate);
     console.log(newDate.calculate());
 
     $("#result").html(dayOfWeek[newDate.calculate()]);
+
+    console.log(newDate.calculate());
   });
 }); 
